@@ -84,7 +84,7 @@ button:active{
 #resultat {
 	font-family: cursive, Verdana, sans-serif;
 	font-weight: bold;
-	color:#D1F400;
+	color:#fff;
 	
     position: absolute;
     bottom: 20px;
@@ -152,10 +152,10 @@ function initialize() {
 	
 	
 	
-	var marker1 = new google.maps.Marker({
+	var marker2 = new google.maps.Marker({
     position: latLngB,
 	icon: "map-maison.png",
-
+	zIndex: 999,
     map: map
   });
 
@@ -168,11 +168,12 @@ function getLocation() {
 		function(position) {
 			var latLngA = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
 
-			var marker2 = new google.maps.Marker({
+			var marker1 = new google.maps.Marker({
 				position: latLngA,
 				draggable: false,
 				animation: google.maps.Animation.DROP,
 				icon: "map-smile.png",
+				zIndex: 1000,
 				map: map
 				
 				});
