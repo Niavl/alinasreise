@@ -2,25 +2,26 @@
 
 J'ai fait ce site pour ma petite nièce de 10 ans, Alina.
 
-Elle vit à Berne (donc germanophone) et est parti faire un Tour du Monde avec ses parents :)
+Elle vit à Berne (donc germanophone) 
 
-Alinas Reise : le voyage de Alina.
+Elle et ses parents sont partis faire un Tour du Monde :)
+Je lui ai fait ce petit site pour qu'elle prenne conscience de la distance en km qui la sépare de chez la ville où elle vit (Berne).
 
 
-Je lui ai fait ce petit site pour qu'elle prenne conscience de la distance en km qui la sépare de chez elle (de Berne donc).
+"Alinas Reise : le voyage de Alina."
 
 
 Fonctionnement
 
 Le site utilise l'API de google maps.
 
-Au lancement du site, un premier point est marqué comme référence (ici Berne du coup)
+Au lancement du site, un premier point est marqué comme référence (ici Berne du coup).
 
-On clique sur le bouton pour lancer la géolocalisation. On autorise alors le navigateur à accéder à l'information.
+On clique sur le bouton pour lancer la géolocalisation. Le navigateur demande l'autorisation d'accéder à l'information.
 
-La fonction récupère les coordonnées et marque le 2e point qui est la position de l'utilisateur.
+La fonction récupère les coordonnées de l'utilisateur et marque le 2e point.
 
-La fonction calcule ensuite la distance à vol d'oiseau (distance sphérique) en mètres puis est convertie en km puis arrondie à l'entier (parce qu'il faut pas déconner)
+La fonction calcule ensuite la distance à vol d'oiseau (distance sphérique) entre ces 2 points en mètres puis est convertie en km puis arrondie à l'entier (parce qu'il faut pas déconner).
 
 Ce résultat est affiché dans le rectangle violet.
 
